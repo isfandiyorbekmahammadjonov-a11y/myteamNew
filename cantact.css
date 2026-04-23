@@ -1,0 +1,107 @@
+/* Umumiy sozlamalar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #014E56;
+    padding: 73px 165px; /* Dizayndagi padding */
+}
+
+nav {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Hamma narsani vertikal markazlaydi */
+}
+/* Linklar turgan blok */
+.nav-links {
+    display: flex;
+    align-items: center; /* Linklarni logo bilan bir chiziqqa keltiruvchi asosiy kod */
+    gap: 40px; /* Linklar orasidagi masofa */
+    margin-right: auto; /* Linklarni chaproqqa, logoga yaqinroq surish uchun */
+    margin-left: 80px;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: none;
+}
+.contact-btn {
+    color: white;
+    border: 2px solid white;
+    border-radius: 24px;
+    width: 153px;
+    height: 48px;
+    background-color: #014E56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+footer {
+    background-color: #004047;
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 48px;
+}
+.footer-links {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* 2-blok stili */
+.footer-address p {
+    color: white;
+    opacity: 0.6;
+    font-size: 15px;
+    line-height: 25px;
+}
+.footer-social {
+    img {
+        margin-bottom: 51px;
+    }
+}
+.copyright {
+    opacity: 0.6;
+    font-size: 15px;
+    color: white;
+}
+@media only screen and (max-width:900px) {
+    header {
+        padding: 48px 24px; /* Paddingni kamaytiramiz */
+        background-image: none;
+    }
+
+    /* Navigatsiya */
+    nav {
+        justify-content: space-between;
+    }
+
+    /* Desktop menyuni yashirish (agar burger menyu ishlatmoqchi bo'lsangiz) */
+    .nav-links, .contact-btn {
+        display: none; 
+    }
+    .footer-wrapper {
+        flex-direction: column;
+    }
+}

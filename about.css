@@ -1,0 +1,295 @@
+/* Umumiy sozlamalar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #014E56;
+    padding: 73px 165px; /* Dizayndagi padding */
+}
+
+nav {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Hamma narsani vertikal markazlaydi */
+}
+/* Linklar turgan blok */
+.nav-links {
+    display: flex;
+    align-items: center; /* Linklarni logo bilan bir chiziqqa keltiruvchi asosiy kod */
+    gap: 40px; /* Linklar orasidagi masofa */
+    margin-right: auto; /* Linklarni chaproqqa, logoga yaqinroq surish uchun */
+    margin-left: 80px;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: none;
+}
+.contact-btn {
+    color: white;
+    border: 2px solid white;
+    border-radius: 24px;
+    width: 153px;
+    height: 48px;
+    background-color: #014E56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.hero {
+    background-color: #014E56;
+    padding-top: 200px;
+    padding-bottom: 250px;
+    color: white;
+    overflow: hidden; /* Bezaklar chiqib ketmasligi uchun */
+}
+
+.hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Elementlar yuqoridan tekislanadi */
+}
+
+/* Chap tomondagi sarlavha */
+.hero-title h1 {
+    font-size: 64px;
+    line-height: 100px;
+    font-weight: 700;
+}
+/* O'ng tomondagi kontent */
+.hero-content {
+    max-width: 730px;
+}
+
+.decoration-line {
+    width: 50px;
+    height: 4px;
+    background-color: #F67E7E; /* Yashil chiziqcha */
+    margin-bottom: 79px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+}
+section {
+  background-color: rgba(0, 64, 71, 1);
+  padding: 71px 163px 178px 167px;
+}
+.section {
+    background-image: url('./img/bg1.svg');
+    background-repeat: no-repeat;
+}
+.top-container {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0px auto;
+}
+.top {
+  h2 {
+    text-align: center;
+    font-size: 48px;
+    line-height: 48px;
+    color: white;
+  }
+}
+.cards {
+  margin-top: 69px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  .card {
+    width: 350px;
+    height: 305px;
+    background-color: rgba(1, 47, 52, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 24px 53px 24px;
+    gap: 20px;
+    h2 {
+      color: rgba(121, 200, 199, 1);
+      font-size: 18px;
+      line-height: 28px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 500;
+      color: white;
+    }
+    img:last-child {
+      position: relative;
+      bottom: -30px;
+    }
+  }
+}
+.bottom {
+  padding: 113px 20px;
+  margin: 0px auto;
+  width: 100%;
+  background-color: rgba(1, 47, 52, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    margin-bottom: 52px;
+    color: white;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+  }
+  .img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+}
+.footer-1 {
+    background-color: #F67E7E;
+    background-image: url('./img/bg-footer.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding: 76px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 260px;
+    h2 {
+        color: #012F34;
+        line-height: 48px;
+        font-size: 48px;
+    }
+    a {
+        background-color: #F67E7E;
+        text-decoration: none;
+        color: #012F34;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 153px;
+        height: 48px;
+        border: 2px solid #012F34;
+        border-radius: 24px;
+    }
+}
+footer {
+    background-color: #004047;
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 48px;
+}
+.footer-links {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* 2-blok stili */
+.footer-address p {
+    color: white;
+    opacity: 0.6;
+    font-size: 15px;
+    line-height: 25px;
+}
+.footer-social {
+    img {
+        margin-bottom: 51px;
+    }
+}
+.copyright {
+    opacity: 0.6;
+    font-size: 15px;
+    color: white;
+}
+@media only screen and (max-width:900px) {
+    header {
+        padding: 48px 24px; /* Paddingni kamaytiramiz */
+        background-image: none;
+    }
+
+    /* Navigatsiya */
+    nav {
+        justify-content: space-between;
+    }
+
+    /* Desktop menyuni yashirish (agar burger menyu ishlatmoqchi bo'lsangiz) */
+    .nav-links, .contact-btn {
+        display: none; 
+    }
+    /* Hero qismi */
+    .hero {
+        padding-top: 32px;
+        padding-bottom: 197px;
+        text-align: center; /* Hamma matnlarni markazga oladi */
+    }
+
+    .hero-wrapper {
+        flex-direction: column; /* Elementlarni ustma-ust qo'yadi */
+        align-items: center;
+        gap: 18px;
+    }
+
+    /* Sarlavha */
+    .hero-title h1 {
+        font-size: 40px; /* Mobil uchun shriftni kichraytiramiz */
+        line-height: 40px;
+    }
+
+    /* O'ng tomondagi kontent */
+    .hero-content {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Chiziq va matnni markazlash */
+        margin-top: 0;
+    }
+
+    .decoration-line {
+        display: none; /* Mobil versiyada chiziqcha ko'pincha olib tashlanadi yoki markazlanadi */
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        line-height: 25px;
+        padding: 0 10px;
+    }
+    section {
+    background-color: rgba(0, 64, 71, 1);
+    padding: 71px 10px 178px 10px;
+  }
+  .footer-1  {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        h2 {
+            text-align: center;
+        }
+    }
+    .footer-wrapper {
+        flex-direction: column;
+    }
+}
