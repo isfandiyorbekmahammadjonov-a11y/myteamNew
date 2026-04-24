@@ -17,6 +17,40 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center; /* Hamma narsani vertikal markazlaydi */
+    position: relative;
+    button {
+        display: none;
+    }
+    .bars {
+        position: absolute;
+        top: -50px;
+        right: -25px;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 100vh;
+        background-color: #2C6269;
+        background-image: url('./img/bg-last.svg');
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        img {
+            width: 18px;
+            height: 17px;
+            width: 100%;
+            position: relative;
+            right: -45px;
+            top: 56px;
+        }
+        .a {
+            margin-top: 112px;
+        }
+        a {
+            margin-left: 48px;
+        }
+    }
+    .hidden {
+        display: none;
+    }
 }
 /* Linklar turgan blok */
 .nav-links {
@@ -33,6 +67,9 @@ nav a {
     line-height: 28px;
     text-decoration: none;
 }
+nav a:hover {
+    color: #F67E7E;
+}
 .contact-btn {
     color: white;
     border: 2px solid white;
@@ -43,6 +80,10 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.contact-btn:hover {
+    color: #014E56;
+    background-color: white;
 }
 .container {
     max-width: 1110px;
@@ -186,6 +227,10 @@ section {
         border: 2px solid #012F34;
         border-radius: 24px;
     }
+    a:hover {
+        background-color: black;
+        color: white;
+    }
 }
 footer {
     background-color: #004047;
@@ -229,16 +274,6 @@ footer {
     header {
         padding: 48px 24px; /* Paddingni kamaytiramiz */
         background-image: none;
-    }
-
-    /* Navigatsiya */
-    nav {
-        justify-content: space-between;
-    }
-
-    /* Desktop menyuni yashirish (agar burger menyu ishlatmoqchi bo'lsangiz) */
-    .nav-links, .contact-btn {
-        display: none; 
     }
     /* Hero qismi */
     .hero {
@@ -291,5 +326,18 @@ footer {
     }
     .footer-wrapper {
         flex-direction: column;
+    }
+}
+@media only screen and (max-width:600px) {
+    /* Desktop menyuni yashirish (agar burger menyu ishlatmoqchi bo'lsangiz) */
+    .nav-links, .contact-btn {
+        display: none; 
+    }
+    nav {
+        button {
+            display: flex;
+            background: transparent;
+            border: none;
+        }
     }
 }
